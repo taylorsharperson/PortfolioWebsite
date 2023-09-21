@@ -1,0 +1,328 @@
+/*  
+Author: Taylor Sharperson
+File Name: styles.css
+Date: 02/19/2023
+*/
+
+/*CSS Reset */
+body, header, nav, main, footer, img, h1, h2, figure, figcaption, video{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/*Style rules for body and images*/
+body{
+  background-color:#AEBCC4);
+}
+img{
+  max-width: 100%;
+  display: block;
+  text-align: center;
+}
+ol{
+font-size: 1.25em;
+}
+
+video {
+    max-width: 100%;
+    display: block;
+}
+.center{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+}
+.welcome{
+display: block;
+text-align: left;
+font-size: 1em;
+}
+/*Style rules for mobile viewport*/
+.mobile{
+display: block;  
+}
+/*Style rules to show mobile class and hide tab-desk class*/
+.tab-desk{
+display: none;
+}
+/*Style rules for header area*/
+.mobile h1{
+padding: 2%;
+text-align: center;
+font-family: 'Abel', sans-serif;
+}
+
+.mobile h3{
+padding: 2%;
+text-align: center;
+font-family: 'Nunito', sans-serif; 
+}
+
+/* Styles rules for navigation*/
+nav{
+background-color: #CFCBC9;
+}
+nav ul{
+list-style-type: none;
+text-align: center;
+margin: 0;
+}
+nav li{
+display: inline-block;
+font-size: 1.25em;
+font-family: 'Abel', sans-serif;
+font-weight:bold;
+color: white;
+}
+figure{
+border: 4px solid #2a1f14;
+box-shadow: 6px 6px 10px #CFCBC9;
+max-width: none;
+margin: 2% auto;
+}
+
+figcaption{
+padding: 2%;
+border-top: 4px solid #2a1f14;
+text-shadow: 6px 6px 10px #D3CBC7;
+}
+nav li a{
+display: block;
+color: #f6eee4;
+padding: 2em;
+text-decoration: none;
+}
+
+/*Style rules for main content*/
+main{
+padding: 2%;
+font-family: 'Nunito', sans-serif;
+}
+
+main p{
+  font-size: 1.25em;
+}
+main h1{
+color: #000000;
+padding-top:2%; 
+text-align: center;
+font-size: 4em;
+}
+main h2{
+padding-top:2%; 
+text-align: center;
+font-size: 2em; 
+}
+
+main ul{
+  list-style-type: square;
+}
+
+/* Style rules for class and id selectors*/
+.link{
+background-color: #CFCBC9;  
+color: white;
+padding: 2%;
+width: 80%;
+margin-top: 0;
+margin-bottom: 0;
+margin-left: auto;
+margin-right: auto;
+}
+.link a{
+color: #D3CBC7;
+text-decoration: none;
+font-weight: bold;  
+}
+.action {
+font-size: 1.75em;
+font-weight: bold;
+text-align: center;
+}
+.round{
+border-radius: 6px;  
+}
+#contact{
+text-align: center;
+}
+
+.tel-link{
+background-color: #CFCBC9;  
+padding: 2%;
+width: 80%;
+margin-top: 0;
+margin-bottom: 0;
+margin-left: auto;
+margin-right: auto;
+}
+
+.tel-link a{
+color: #f6eee4;
+text-decoration: none;
+font-weight: bold;  
+}
+.email-link{
+background-color: #CFCBC9;  
+padding: 2%;
+width: 80%;
+margin-top: 0;
+margin-bottom: 0;
+margin-left: auto;
+margin-right: auto;
+}
+.email-link a{
+color: #C1CCCA;
+text-decoration: none;
+font-weight: bold;  
+}
+/*Unvisited link*/
+a:link {
+  color: white;
+}
+/*Visited link */
+a:visited {
+  color: #2a1f14;
+}
+/*Hover over link */
+a:hover {
+  color: #ECE8DB;
+}
+/* Style rules for table */
+
+  .mobile-tablet{
+    display: none;
+  }
+
+#questions p { 
+    cursor: pointer;
+    font-size: 1.55em;
+    text-align: center;
+    float: left;
+}
+ 
+#answer {
+    text-align: center;
+    font-weight: bold;
+    width: 80%;
+    margin: 0 auto;
+}
+ 
+#answer h2 { 
+    display: none;
+}
+/*Style rules for footer content*/
+footer{
+  text-align: center;
+  font-size: 1em;
+  background-color: #C1CCCA;
+  color: #000000;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+
+footer a{
+  text-decoration: none;
+  color: black;
+}
+
+/*Media Query for Tablet Viewport*/
+@media screen and (min-width: 620px) ,print{
+
+/*Tablet Viewport: Show tab-desk class, hide mobile class*/
+.tab-desk{
+display: block;
+}
+
+.mobile{
+display: none;
+}
+/* Tablet Viewport: Style rule for form element */
+
+form{
+  width: auto;
+  margin: auto auto;
+}
+
+/* Desktop Viewport: Style rules for form elements */
+
+form{
+  width: auto;
+}
+
+.form-grid{
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 0px;
+  width: 20%;
+}
+
+.btn{
+  grid-column: 1 / span 2;
+}
+/*Tablet Viewport: Style rules for nav area*/
+nav li{
+display: inline-block;
+font-size: 1.25em;
+}
+
+nav li a{
+padding: 0.5em;
+}
+.grid{
+display: grid;
+grid-template-columns: 2;
+grid-gap: 10px;
+}
+/*Media Query for Desktop Viewport */
+@media screen and (min-width: 1000px), print{
+
+/*Desktop Viewport: Style rules for nav area*/
+nav li{
+font-size: 1.5em;
+}
+
+nav li a{
+padding: 0.5em 1.5em;
+}
+
+nav li a:hover {
+color: #2a1f14;
+background-color: #f6eee4;
+}
+
+/*Desktop Viewport: Style rules for main content*/
+#info ul{
+margin-left: 5%;
+}
+.grid{
+grid-template-columns: 3;
+grid-gap: 30px;
+}
+}
+
+/*Media Query for Large Desktop Viewports*/
+@media only screen and (min-width: 1921px){
+body{
+background: linear-gradient(#f6eee4, #C1CCCA);
+}
+
+#wrapper{
+width: 1920px;
+margin-top: 0;
+margin-bottom: 0;
+margin-left: auto;
+margin-right: auto;
+}
+
+main{
+background-color: #f6eee4;
+}
+.grid{
+grid-template-columns: 4;
+}
+}
+
+

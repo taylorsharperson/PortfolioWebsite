@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<!-- 
+Student Name: Taylor Sharperson
+File Name: projects.html
+Date: 03/12/2023
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/styles.css"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Abel&family=Nunito&display=swap" rel="stylesheet">
+<title>Portfolio: Projects</title>
+<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png">
+<link rel="apple-icon" sizes="180x180" href="images/apple.png">   
+<link rel="icon" sizes="192x192" href="images/android.png">
+<style>
+p{
+font-size: 1.25em;
+}
+</style>
+</head>
+<body>
+<header>
+    <nav>   
+      <ul>    
+      <li><a href="index.html"> Home</a></li>  
+      <li><a href="hbcu.html">HBCU Life</a></li>
+      <li><a href="service.html">Community Service</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      </ul>
+     </nav>
+</header>
+
+<!-- Use the main area to add the main content to the webpage -->
+    <main>
+     <div id= "projects">
+      <h1>Computer Science</h1>
+       <p>I have experience with Java, C++, and HTML. My most recent projects have been done in C++. Each project took me about 1-2 hours. My favorite project was my family trip. Although it took me a long time in the end it was very satisfying when it worked.</p>
+      <p>Some of the projects I have done:</p>
+      <ol>    
+      <li>Family Vacation</li>
+      <li>Algebra Calculator</li>    
+      <li>A Quiz</a></li>
+      <li>Integer Calculator</li>
+      </ol>
+      </div>
+          <table>
+          <tr>
+          <td>
+          <p>Watch the video to see one of the projects I've done. This one is family trip, which calculates the time it takes to get there and back from two different locations.</p>
+          <video controls poster="images/computer.jpg" width="500px" height="500px">
+          <source src="media/video.mp4" type="video/mp4">
+          <source src="media/video.webm" type="video/webm">
+          <track src="media/caption.vtt" kind="captions" srclang="en" label="Caption">
+          </video>
+          </td>
+          <td>
+          <div id="questions">
+          <p button onclick="ans1()">How many coding languages do I know?</p>
+          <p button onclick="ans2()">How many coding languages are there?</p>
+          <p button onclick="ans3()">What are my plans for the future?</p>
+          <p button onclick="ans4()">How long have I been able to code?</p>
+          </div>
+          <div id="answer">
+          <h2>Answer:</h2>
+          <p></p>
+           </div>
+      </td>
+      </tr>
+      </table>
+    <h2>Any Questions?</h2>
+          <form class="form-grid">  
+            <fieldset>
+              <legend>Questions?</legend>
+              <label for="fName">First Name:</label>
+              <input type="text" name="fName" id="fName" required> 
+
+              <label for="lName">Last Name:</label>
+              <input type="text" name="lName" id="lName" required>
+
+              <label for="email">Email:</label>
+              <input type="email" name="email" id="email" required>
+
+              <label for="phone">Phone:</label>
+              <input type="tel" id="phone" name="phone" required>
+
+               <label for="question">Question:</label>
+              <input type="text" name="question" id="question" required> 
+
+            </fieldset>
+          <input type="submit" id="submit" value ="Submit" class="btn"> 
+          </form>
+    </main>
+
+    <footer>
+      <p><a href="mailto:taylor1.sharperson@famu.edu">taylor1.sharperson@famu.edu</a></p>
+      <p>&copy; Copyright 2023. All Rights Reserved.</p>
+      <p>Florida Agricultural and Mechanical University</p>
+    </footer>
+<script src="scripts/script.js"></script>
+</body>
+</html>
+
